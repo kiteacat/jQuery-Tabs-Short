@@ -11,11 +11,15 @@
   </div>  
 </div>
 
+<script>
 $(".wrapper .tab").click(function() {
   $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
   $(".tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
+</script>
 
+<style>
 .wrapper .active { color: red; }
 .tab_item ( display: none; )
 .tab_item:first-child { display:block; }
+</style>
